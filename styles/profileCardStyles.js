@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
         // position: 'absolute',
         borderRadius: 16,
         borderWidth: 2.5,
-        borderColor: colors.black65,
+        borderColor: colors.grey_b2,
         borderBottomWidth: 1,
         overflow: 'hidden',
     },

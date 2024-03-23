@@ -31,7 +31,23 @@ const colors = {
     lightGreen50: setAlpha('#00FF00', 50),
     white56: setAlpha('#ffffff', 76),
     grey: '#bcbcbc',
-    green: '#A0DB8E'
+    green: '#A0DB8E',
+    navy: '#cde2ff',
+    navy80: setAlpha('#cde2ff', 80),
+    navy45: setAlpha('#cde2ff', 45),
+    navyBlue: '#385a7c',
+    navyBlue80: setAlpha('#385a7c', 80),
+    navyBlue45: setAlpha('#385a7c', 45),
+    navyBlue60: setAlpha('#385a7c', 60),
+    blurYellow: '#ffc900',
+    blurYellow80: setAlpha('#ffc900', 80),
+    blurYellow45: setAlpha('#ffc900', 46),
+    pastelPink: '#ffd3b6',
+    pastelPink80: setAlpha('#ffd3b6', 80),
+    pastelPink45: setAlpha('#ffd3b6', 75),
+    pastelRed: '#ffaaa5',
+    grey_d8: '#d8d8d8',
+    grey_b2: '#A6A6A6',
     
 
 }

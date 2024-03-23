@@ -5,6 +5,7 @@ import styles from '../styles/HomeMiddleComponentStyles';
 
 const HomeMiddleComponent = (props) => {
     const { title, subTitle } = props;
+    if (!title && !subTitle) return null;
     return (
         <View style={styles.infoContainer} >
             {title && (<Text style={styles.title}>{title}</Text>)}

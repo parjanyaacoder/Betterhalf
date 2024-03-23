@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         height: circleHeight + 3,
         width: circleWidth + 3,
         borderRadius: circleBorderRadius,
-        backgroundColor: 'grey',
+        backgroundColor: colors.grey_d8,
         position: 'absolute'
     },
     thirdCircle: {
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         height: circleHeight + 49,
         width: circleHeight + 49,
         borderRadius: circleBorderRadius,
-        backgroundColor: 'grey',
+        backgroundColor: colors.grey_d8,
         position: 'absolute',
     },
     fifthCircle: {
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
         height: circleHeight + 95,
         width: circleWidth+95,
         borderRadius: circleBorderRadius + 20,
-        backgroundColor: 'grey',
+        backgroundColor: colors.grey_d8,
     },
     cardsV2: {
         position: 'absolute',

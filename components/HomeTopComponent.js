@@ -20,12 +20,20 @@ const HomeTopComponent = (props) => {
     <View style={styles.topComponent} >
       <View style={styles.sixthCircle}></View>
       <View style={styles.fifthCircle}></View>
-      <TagComponent onTagPress={onTagPress} image={images.getCharts()} tagType={tagTypes.GROWTH} />
+      <TagComponent onTagPress={onTagPress} image={images.getCharts()} tagType={tagTypes.GROWTH} customTagStyles={{
+        backgroundColor: colors.navy,
+        borderColor: colors.navyBlue80
+       }} />
       <TagComponent onTagPress={onTagPress} text={appStrings.innovation} customContainerStyles={{ 
         top: 315,
         left: 280,
         elevation: 4,
-       }} tagType={tagTypes.INNOVATION}/>
+       }} tagType={tagTypes.INNOVATION}
+       customTagStyles={{
+        backgroundColor: colors.blurYellow45,
+        borderColor: colors.blurYellow 
+       }}
+       />
        <TagComponent onTagPress={onTagPress} text={appStrings.ownership} customContainerStyles={{ 
         top: 50,
         left: 30,
@@ -47,6 +55,10 @@ const HomeTopComponent = (props) => {
         left: 50,
         elevation: 4,
        }} 
+       customTagStyles={{
+        backgroundColor: colors.pastelPink45,
+        borderColor: colors.pastelRed
+       }}
        tagType={tagTypes.LEARNING}
        />
        <TagComponent onTagPress={onTagPress} text={appStrings.experiences} customContainerStyles={{ 
