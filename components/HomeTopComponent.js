@@ -13,8 +13,9 @@ import PropTypes from 'prop-types';
 
 const HomeTopComponent = (props) => {
 
-  const { onTagPress } = props;
+  const { onTagPress, onProfileCardPress } = props;
   const { tagTypes } = TagConstants;
+
 
   return (
     <View style={styles.topComponent} >
@@ -86,8 +87,8 @@ const HomeTopComponent = (props) => {
       <View style={styles.secondCircle}></View>
       <View style={styles.firstCircle}></View>
       <View style={styles.cardsV2} >
-        <LeftCard />
-        <RightCard />
+        <LeftCard onProfileCardPress={onProfileCardPress} />
+        <RightCard onProfileCardPress={onProfileCardPress} />
       </View>
       </View>
   );
@@ -95,10 +96,12 @@ const HomeTopComponent = (props) => {
 
 HomeTopComponent.propTypes = {
   onTagPress: PropTypes.func,
+  onProfileCardPress: PropTypes.func,
 };
 
 HomeTopComponent.defaultProps = {
   onTagPress: () => {},
+  onProfileCardPress: () => {},
 };
 
 

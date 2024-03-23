@@ -4,16 +4,16 @@ import PropTypes from 'prop-types';
 import styles from '../styles/profileCardStyles';
 
 const ProfileCardComponent = (props) => {
-    const { title, subTitle, image, onPress } = props;
+    const { title, subTitle, image } = props;
 
     return (
-        <Pressable onPress={onPress} style={styles.profileCard} >
+        <View style={styles.profileCard} >
         <Image source={image} style={styles.image} />
         <View style={styles.infoContainer} >
             <Text style={styles.title}>{title}</Text>
             <Text style={styles.subTitle}>{subTitle}</Text>
         </View>
-        </Pressable>
+        </View>
     );
 };
 

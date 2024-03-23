@@ -1,28 +1,38 @@
 import React, { memo, useState } from 'react';
-import { View } from 'react-native';
+import { SafeAreaView, ScrollView, View } from 'react-native';
 import styles from '../styles/HomeScreenStyles'
 import HomeTopComponent from '../components/HomeTopComponent';
 import HomeMiddleComponent from '../components/HomeMiddleComponent';
 import TagConstants from '../constants/tagTypes';
+import HomeBottomComponent from '../components/HomeBottomComponent';
 
 const HomeScreen = () => {
 
   const [titleText, setTitleText] = useState(null);
   const [subTitleText, setSubTitleText] = useState(null);
+  const [showPersonalProfile, setShowPersonalProfile] = useState(true);
 
   const onTagPress = (tagType) => {
     const tagItem = TagConstants.getTagItemFromType(tagType);
     const { title, subTitle } = tagItem;
-    console.log(title, subTitle, tagItem, tagType);
     setTitleText(title);
     setSubTitleText(subTitle);
   }
 
+  const onProfileCardPress = (value) => {
+    setShowPersonalProfile(value);
+  }
+
   return (
-    <View style={styles.screen} >
-      <HomeTopComponent onTagPress={onTagPress} />
-      <HomeMiddleComponent title={titleText} subTitle={subTitleText} />
-    </View>
+    <SafeAreaView>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <View style={styles.screen} >
+          <HomeTopComponent onTagPress={onTagPress} onProfileCardPress={onProfileCardPress} />
+          <HomeMiddleComponent title={titleText} subTitle={subTitleText} />
+          <HomeBottomComponent showPersonalProfile={showPersonalProfile} />
+        </View>
+    </ScrollView>
+    </SafeAreaView>
   );
 };
 

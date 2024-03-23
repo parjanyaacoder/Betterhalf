@@ -8,7 +8,6 @@ export function setAlpha(color, alpha) {
       }
       return hex
     })()
-    console.log('color', color.substring(0, 7) + alphaValue)
     return color.substring(0, 7) + alphaValue // Format: #rrggbbaa
   }
 
@@ -48,6 +47,7 @@ const colors = {
     pastelRed: '#ffaaa5',
     grey_d8: '#d8d8d8',
     grey_b2: '#A6A6A6',
+    skin: '#fdf5e6'
     
 
 }
