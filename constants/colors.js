@@ -21,6 +21,17 @@ const colors = {
     black65: setAlpha('#000000', 65),
     darkGrey30: setAlpha('#8F8F8F', 90),
     offWhite: '#F9F9F9',
+    blue80: setAlpha('#1E90FF', 80),
+    blue45: setAlpha('#1E90FF', 45),
+    purple45: setAlpha('#800080', 45),
+    purple80: setAlpha('#800080', 80),
+    lightRed45: setAlpha('#FF6347', 45),
+    lightRed80: setAlpha('#FF6347', 80),
+    lightGreen20: setAlpha('#00FF00', 20),
+    lightGreen50: setAlpha('#00FF00', 50),
+    white56: setAlpha('#ffffff', 76),
+    grey: '#bcbcbc',
+    green: '#A0DB8E'
     
 
 }

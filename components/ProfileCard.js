@@ -20,14 +20,14 @@ const ProfileCardComponent = (props) => {
 ProfileCardComponent.propTypes = {
     title: PropTypes.string,
     subTitle: PropTypes.string,
-    image: PropTypes.string,
+    image: PropTypes.number,
     onPress: PropTypes.func,
 };
 
 ProfileCardComponent.defaultProps = {
     title: '',
     subTitle: '',
-    image: '',
+    image: null,
     onPress: () => {},
 };
 

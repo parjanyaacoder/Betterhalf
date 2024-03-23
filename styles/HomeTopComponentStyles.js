@@ -10,8 +10,10 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        marginHorizontal: 24,
         marginVertical: 20,
         padding: 10,
+
     },
     firstCircle: {
         height: circleHeight,
